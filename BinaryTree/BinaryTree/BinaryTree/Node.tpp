@@ -88,7 +88,6 @@ NodeT<T>* NodeT<T>::Delete(T dataToDelete, NodeT<T>* current) {
     return current;
 }
 
-
 template<typename T>
 int NodeT<T>::Size() {
     int size{};

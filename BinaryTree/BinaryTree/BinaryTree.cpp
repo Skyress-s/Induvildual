@@ -4,7 +4,17 @@
 #include "../../Sorting/Sorting/SomeScalarClass.h"
 #include "../../Sorting/Sorting/SomeScalarClass.cpp"
 
+class Vector {
+    int X;
+    int Y;
+
+    
+};
+
 int main() {
+
+
+    return 0;
     SomeScalarClass t = SomeScalarClass();
     NodeT<SomeScalarClass>* templateNode = new NodeT<SomeScalarClass>(SomeScalarClass(15));
     templateNode->Insert(SomeScalarClass(4));
@@ -18,7 +28,7 @@ int main() {
     templateNode->Delete(SomeScalarClass(20), templateNode);
     std::cout << "---------------------------" << std::endl;
     templateNode->PrintTree();
-
+    
     
     return 0;
     Node* root = new Node(5);

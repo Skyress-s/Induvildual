@@ -83,7 +83,7 @@ void HashTableLinkedList<K, T>::RemoveItem(K key) {
         searchNode = searchNode->next;
         index++;
     }
-
+    
     if (bKeyExists) {
         LinkedList<std::pair<int, T>>& list = table[hash];
         list.RemoveAtIndex(index);
