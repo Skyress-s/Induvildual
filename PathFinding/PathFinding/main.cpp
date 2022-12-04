@@ -14,6 +14,13 @@ int main() {
 	Vector v1 = Vector(1.f,0.f,0.f);
 	Vector v2 = Vector(-1.f,0.f,0.f);
 	std::cout << Vector::Distance(v1,v2)<< std::endl;
+
+	Vector v3 = v1 + v2;
+	Vector v4 = v1 - v2;
+	Vector v5 = v1 * v2;
+	Vector v6 = v1 / v2;
+
+	Vector afawf = (v1 / 4.f);
 	
 	/*
 	// PriorityQueueDerived<Path*, std::vector<Path*>, std::greater<Path*>> priQueue{};
