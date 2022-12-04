@@ -151,11 +151,11 @@ void NodeT<T>::PrintTree() {
         for (int j = 0; j < depths.size(); ++j) {
             int padding = 3;
             if (depths[j].first == i) {
-                // padding -= std::to_string(depths[j].second).size();
+                padding -= std::to_string(depths[j].second).size();
                 std::cout << depths[j].second;
             }
             for (int x = 0; x < padding; ++x) {
-                std::cout << " ";
+                std::cout << "  ";
             }
         }
         std::cout << std::endl;

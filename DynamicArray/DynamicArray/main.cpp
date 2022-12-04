@@ -11,7 +11,7 @@ int main(int argc, char* argv[])
     // vec.PushBack(69);
     // vec.PushBack(1259);
 
-    // vec.InsertAtIndex(2, 42);
+    vec.RemoveAtIndex(5);
     // vec.InsertAtIndex(5, 42);
     // vec.InsertAtIndex(7, 42);
 

@@ -108,6 +108,22 @@ void DynamicArray<T>::PopBack() {
     }
     // TODO can also reset element here if we want.
 }
+template <typename T>
+void DynamicArray<T>::RemoveAtIndex(const int& index) {
+    if (_size == 0) {
+        return;
+    }
+    if (index == _size-1) {
+        PopBack();
+        return;
+    }
+    
+    for (int i = index; i <= _size -1 ; ++i) {
+        _arr[i] = _arr[i+1];
+    }
+    _size--;
+    // dont overcomplicate with eventual shrinks
+}
 
 template <typename T>
 T& DynamicArray<T>::At(const int& index) {

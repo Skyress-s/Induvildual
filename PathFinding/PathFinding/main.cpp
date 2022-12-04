@@ -56,7 +56,7 @@ int main() {
 	Vector G(3.77f, 0.005f, 0);
 	Vector H(10.55f, 4.60f, 0);
 
-	Vector End = G;
+	Vector End = H;
 	
 	PathFinder find{};
 	find.AddNode(new Node('A', Vector::Distance(A, End)));
@@ -86,8 +86,8 @@ int main() {
 	
 	find.AddEdge('G', 'H', Vector::Distance(G,H));
 
-	// find.Dijkstra2('A', 'D');
-	find.Astar2('A', 'G');
+	find.Dijkstra2('B', 'H');
+	find.Astar2('B', 'H');
 	
 	
 	return 0;

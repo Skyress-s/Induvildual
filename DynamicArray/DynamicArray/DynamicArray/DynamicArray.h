@@ -23,6 +23,8 @@ public:
 
    void PopBack();
 
+   void RemoveAtIndex(const int& index);
+
    T& At(const int& index);
 
    T& operator[](const int& i);
